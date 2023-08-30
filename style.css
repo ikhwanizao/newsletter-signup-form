@@ -6,6 +6,7 @@
 
 :root {
   --background-color: hsl(234, 29%, 20%);
+  --Tomato: hsl(4, 100%, 67%);
 }
 
 .background-container {
@@ -13,4 +14,18 @@
   height: 100vh;
 
   background-color: var(--background-color);
+}
+
+.center-container
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 3px;
 }
