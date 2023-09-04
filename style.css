@@ -7,9 +7,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 :root {
   --background-color: hsl(234, 29%, 20%);
   --Tomato: hsl(4, 100%, 67%);
+  --Tomato-bg : rgb(255,232,230);
   --White: hsl(0, 0%, 100%);
   --Charcoal:hsl(235, 18%, 26%);
   --Grey: hsl(231, 7%, 60%)
@@ -85,14 +90,26 @@ img {
   flex-direction: column;
 }
 
-.email-address {
+.email-and-invalid-label {
+  display: flex;
   font-size: 0.7rem;
   font-weight: 700;
+  justify-content: space-between;
+}
+
+.email-address {
+  
   color: var(--Charcoal);
   margin-bottom: 8px;
 }
 
+.invalid-email {
+  color: var(--Tomato);
+  display: none;
+}
+
 input[type=email] {
+  outline: none;
   width: 100%;
   padding: 12px 16px;
   display: inline-block;
@@ -101,7 +118,7 @@ input[type=email] {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+.email-button {
   width: 100%;
   background-color: var(--background-color);
   color: var(--White);
