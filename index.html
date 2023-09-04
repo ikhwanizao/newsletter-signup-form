@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="style.css" />
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -55,8 +56,15 @@
                 <div class="email-address">Email address</div>
                 <div class="invalid-email">Valid email required</div>
               </div>
-              <input type="email" id="email" placeholder="email@company.com" required />
-              <button type="button" class="email-button" id="email-submit">Subscribe to monthly newsletter</button>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@company.com"
+                required
+              />
+              <button type="button" class="email-button" id="email-submit">
+                Subscribe to monthly newsletter
+              </button>
             </div>
           </form>
         </div>
@@ -64,7 +72,17 @@
           <img src="./assets/images/illustration-sign-up-desktop.svg" />
         </div>
       </div>
+
+      <div class="confirmation-container">
+        <div class="success-icon"><img src="assets/images/icon-success.svg" alt="" /></div>
+        <div  class="gratitude">Thanks for subscribing!</div>
+        <div class="confirmation-description">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</div>
+        <div class="button-dismiss">
+          <button class="dismiss-msg">Dismiss message</button>
+        </div>
+      </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
